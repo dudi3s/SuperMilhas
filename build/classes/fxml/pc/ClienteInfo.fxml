@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.StackedBarChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ClienteInfoController">
+    <children>
+        <Pane layoutX="462.0" layoutY="186.0" prefHeight="110.0" prefWidth="1280.0" style="-fx-background-color: #4286f4;" AnchorPane.bottomAnchor="610.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="110.0" fitWidth="134.0" layoutX="22.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/icons/geral_user.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="LB_nome" layoutX="161.0" layoutY="21.0" text="Nome">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Label fx:id="LB_email" layoutX="161.0" layoutY="55.0" text="E-mail">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <ImageView fx:id="IV_Oferta" fitHeight="76.0" fitWidth="81.0" layoutX="1090.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/icons/offer_icon.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="BT_Chat" contentDisplay="TOP" layoutX="1184.0" layoutY="15.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="73.0" style="-fx-background-color: bebebe;" text="Chat" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/icons/chat_icon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Label fx:id="LB_cliente" layoutX="1007.0" layoutY="16.0" prefHeight="16.0" prefWidth="101.0" />
+            </children>
+        </Pane>
+        <Pane layoutX="323.0" layoutY="110.0" prefHeight="610.0" prefWidth="1280.0" style="-fx-background-color: #E8E8E8;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="110.0">
+            <children>
+                <AnchorPane prefHeight="616.0" prefWidth="1280.0">
+                    <children>
+                        <SplitPane dividerPositions="0.55" layoutX="314.0" layoutY="148.0" prefHeight="616.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <items>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                    <children>
+                                        <Pane layoutX="185.0" layoutY="-14.0" prefHeight="189.0" prefWidth="700.0" style="-fx-background-color: #ABABAB;" AnchorPane.bottomAnchor="439.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-14.0">
+                                            <children>
+                                                <ComboBox fx:id="CB_Cliente_Programas" layoutX="34.0" layoutY="64.0" prefHeight="25.0" prefWidth="209.0" />
+                                                <Label layoutX="35.0" layoutY="29.0" text="Programa">
+                                                    <font>
+                                                        <Font size="24.0" />
+                                                    </font>
+                                                </Label>
+                                                <ImageView fx:id="IV_Imagem_Programa" fitHeight="132.0" fitWidth="272.0" layoutX="407.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" />
+                                                <Label fx:id="LB_Total_Milhas" layoutX="34.0" layoutY="95.0" text="Total de Milhas:">
+                                                    <font>
+                                                        <Font size="24.0" />
+                                                    </font>
+                                                </Label>
+                                    <Label fx:id="LB_Senha_Programa" layoutX="34.0" layoutY="154.0" text="Senha:">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="LB_Usuario_Programa" layoutX="34.0" layoutY="130.0" text="Usuário:">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                            </children>
+                                        </Pane>
+                                        <Pane layoutX="124.0" layoutY="174.0" prefHeight="440.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="174.0">
+                                            <children>
+                                                <TableView fx:id="TV_Programas_Venc" prefHeight="448.0" prefWidth="700.0">
+                                                    <columns>
+                                                        <TableColumn fx:id="TV_Programas_Venc_Data" prefWidth="351.0" text="Vencimento" />
+                                                        <TableColumn fx:id="TV_Programas_Venc_Qtd" prefWidth="348.0" text="Valor" />
+                                                    </columns>
+                                                </TableView>
+                                            </children>
+                                        </Pane>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                    <children>
+                                        <Label layoutX="141.0" layoutY="56.0" text="Comportamento de Milhas">
+                                            <font>
+                                                <Font size="24.0" />
+                                            </font>
+                                        </Label>
+                              <StackedBarChart fx:id="BC_Comportamento_Milhas" layoutX="21.0" layoutY="109.0" prefHeight="464.0" prefWidth="530.0">
+                                <xAxis>
+                                  <CategoryAxis fx:id="BC_CatA" side="BOTTOM" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis fx:id="BC_NumA" side="LEFT" />
+                                </yAxis>
+                              </StackedBarChart>
+                                    </children>
+                                </AnchorPane>
+                            </items>
+                        </SplitPane>
+                    </children>
+                </AnchorPane>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

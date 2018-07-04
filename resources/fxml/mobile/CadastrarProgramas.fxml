@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="411.0" style="-fx-background-color: f4f4f4;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CadastrarProgramasController">
+    <children>
+        <Pane layoutX="147.0" layoutY="106.0" prefHeight="49.0" prefWidth="411.0" style="-fx-background-color: gray;" AnchorPane.bottomAnchor="654.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="48.0" fitWidth="32.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/icons/menu_icon.png" />
+                    </image>
+                </ImageView>
+                <Text fill="WHITE" layoutX="57.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de Programas" wrappingWidth="282.7255859375">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Text>
+            </children>
+        </Pane>
+        <Button layoutX="228.0" layoutY="600.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="89.0" style="-fx-background-color: #ff6666;" text="Cancelar">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button fx:id="BT_Finalizar" layoutX="95.0" layoutY="600.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="89.0" style="-fx-background-color: #66cc66;" text="Finalizar">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Pane layoutY="45.0" prefHeight="440.0" prefWidth="411.0" style="-fx-background-color: #A9A9A9;" AnchorPane.bottomAnchor="215.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="45.0">
+            <children>
+                <Label layoutX="56.0" layoutY="27.0" text="Programa">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Label layoutX="56.0" layoutY="193.0" text="Usuário">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Label layoutX="56.0" layoutY="265.0" text="Senha do Programa">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <ComboBox fx:id="CB_Programas" layoutX="56.0" layoutY="62.0" prefHeight="25.0" prefWidth="299.0" />
+                <TextField fx:id="TF_Usuario" layoutX="56.0" layoutY="228.0" prefHeight="25.0" prefWidth="299.0" />
+                <TextField fx:id="TF_Senha" layoutX="56.0" layoutY="300.0" prefHeight="25.0" prefWidth="299.0" />
+            </children>
+        </Pane>
+        <CheckBox layoutX="95.0" layoutY="519.0" mnemonicParsing="false" text="Aceito os Termos do Contrato" textAlignment="CENTER" underline="true">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </CheckBox>
+    </children>
+</AnchorPane>

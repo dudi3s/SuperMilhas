@@ -1,0 +1,8 @@
+Transcrição do chat:
+
+T1: Olá Sr.(a) Nome, verifiquei no meu sistema que o você tem XXX milhas do programa XXX para vencer no dia XX/XX/XX. Caso houvesse interesse no momento, gostaria de vendê-las?
+E1: Olá Tanara, tenho sim, quantos reais vale esta quantidade de milhas que estão para vencer? 
+T2: Sr.(a) Nome, com as taxas atuais você consegue resgatar até R$xxx,xx na venda delas. Para o pagamento, eu realizo um depósito de metade do valor antes e outra metade após a venda concluída, para sua segurança.
+E2: Você precisará de algum dado além dos necessários para realizar o depósito?
+T3: Não, nosso sistema já possui todos os dados para poder descontar as milhas do plano. Peço que fique atento às recomendações na janela de inserir os dados do depósito. Muito obrigada pela venda!
+E3: Certo, muito obrigado.
