@@ -18,6 +18,6 @@
 
 -Cadastro via ___Facebook/Google+___
 
--Pagamento via ___Paypal___ (opções de venda/compra de milhas sem a interação com a gerente. (+ escalabilidade + segurança)
+-Pagamento via ___Paypal___ (opções de venda/compra de milhas sem a interação com a gerente. [+ escalabilidade + segurança]
 
 -Chats dinâmicos
